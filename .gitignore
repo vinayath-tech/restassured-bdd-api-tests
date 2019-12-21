@@ -1,0 +1,5 @@
+.idea/
+apitesting.iml
+reports/
+restassured-bdd-api-testing.iml
+target/
