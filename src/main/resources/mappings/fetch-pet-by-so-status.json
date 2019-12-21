@@ -1,0 +1,24 @@
+{
+  "id" : "25634463-b042-497b-9b70-59ddf41f36dd",
+  "name" : "v2_pet_findbystatus",
+  "request" : {
+    "url" : "/v2/pet/findByStatus?status=so",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "[]",
+    "headers" : {
+      "Date" : "Sat, 21 Dec 2019 21:32:02 GMT",
+      "Access-Control-Allow-Origin" : "*",
+      "Access-Control-Allow-Methods" : "GET, POST, DELETE, PUT",
+      "Access-Control-Allow-Headers" : "Content-Type, api_key, Authorization",
+      "Content-Type" : "application/json",
+      "Connection" : "close",
+      "Server" : "Jetty(9.2.9.v20150224)"
+    }
+  },
+  "uuid" : "25634463-b042-497b-9b70-59ddf41f36dd",
+  "persistent" : true,
+  "insertionIndex" : 7
+}

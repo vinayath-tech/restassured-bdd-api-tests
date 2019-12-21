@@ -1,0 +1,24 @@
+{
+  "id" : "e323dd59-0ec5-4464-a877-953d4ab9283f",
+  "name" : "v2_findbystatus",
+  "request" : {
+    "url" : "/v2/findByStatus?status=sold",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 404,
+    "body" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><apiResponse><message>null for uri: http://petstore.swagger.io/v2/findByStatus?status=sold</message><type>unknown</type></apiResponse>",
+    "headers" : {
+      "Date" : "Sat, 21 Dec 2019 21:33:19 GMT",
+      "Access-Control-Allow-Origin" : "*",
+      "Access-Control-Allow-Methods" : "GET, POST, DELETE, PUT",
+      "Access-Control-Allow-Headers" : "Content-Type, api_key, Authorization",
+      "Content-Type" : "application/xml",
+      "Connection" : "close",
+      "Server" : "Jetty(9.2.9.v20150224)"
+    }
+  },
+  "uuid" : "e323dd59-0ec5-4464-a877-953d4ab9283f",
+  "persistent" : true,
+  "insertionIndex" : 9
+}

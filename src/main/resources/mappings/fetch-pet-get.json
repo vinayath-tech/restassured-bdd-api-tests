@@ -1,0 +1,24 @@
+{
+  "id" : "53884027-b28d-48bc-942d-f9b65cd1fe02",
+  "name" : "v2_pet_3453535",
+  "request" : {
+    "url" : "/v2/pet/3453535",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"id\":3453535,\"name\":\"updated-test-name\",\"photoUrls\":[],\"tags\":[],\"status\":\"available\"}",
+    "headers" : {
+      "Date" : "Thu, 19 Dec 2019 09:26:30 GMT",
+      "Access-Control-Allow-Origin" : "*",
+      "Access-Control-Allow-Methods" : "GET, POST, DELETE, PUT",
+      "Access-Control-Allow-Headers" : "Content-Type, api_key, Authorization",
+      "Content-Type" : "application/json",
+      "Connection" : "close",
+      "Server" : "Jetty(9.2.9.v20150224)"
+    }
+  },
+  "uuid" : "53884027-b28d-48bc-942d-f9b65cd1fe02",
+  "persistent" : true,
+  "insertionIndex" : 24
+}

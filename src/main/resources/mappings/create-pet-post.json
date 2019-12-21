@@ -1,0 +1,29 @@
+{
+  "id" : "83e63acc-85ca-4755-af24-9ae47685a385",
+  "name" : "v2_pet",
+  "request" : {
+    "url" : "/v2/pet",
+    "method" : "POST",
+    "bodyPatterns" : [ {
+      "equalToJson" : "{\n  \"id\": 3453535,\n  \"category\": {\n    \"id\": 1017654,\n    \"name\": \"Gokul-testing\"\n  },\n  \"name\": \"Dog-gokul\",\n  \"photoUrls\": [\n    \"example-photo\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 84359843,\n      \"name\": \"tag-gokul\"\n    }\n  ],\n  \"status\": \"Available\"\n}",
+      "ignoreArrayOrder" : true,
+      "ignoreExtraElements" : true
+    } ]
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"id\":3453535,\"category\":{\"id\":1017654,\"name\":\"Gokul-testing\"},\"name\":\"Dog-gokul\",\"photoUrls\":[\"example-photo\"],\"tags\":[{\"id\":84359843,\"name\":\"tag-gokul\"}],\"status\":\"Available\"}",
+    "headers" : {
+      "Date" : "Thu, 19 Dec 2019 08:43:39 GMT",
+      "Access-Control-Allow-Origin" : "*",
+      "Access-Control-Allow-Methods" : "GET, POST, DELETE, PUT",
+      "Access-Control-Allow-Headers" : "Content-Type, api_key, Authorization",
+      "Content-Type" : "application/json",
+      "Connection" : "close",
+      "Server" : "Jetty(9.2.9.v20150224)"
+    }
+  },
+  "uuid" : "83e63acc-85ca-4755-af24-9ae47685a385",
+  "persistent" : true,
+  "insertionIndex" : 3
+}

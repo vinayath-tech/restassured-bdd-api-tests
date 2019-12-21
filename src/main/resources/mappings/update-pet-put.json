@@ -1,0 +1,29 @@
+{
+  "id" : "249a815c-ca09-4755-a71f-b9bd5edf5c0e",
+  "name" : "v2_pet",
+  "request" : {
+    "url" : "/v2/pet",
+    "method" : "PUT",
+    "bodyPatterns" : [ {
+      "equalToJson" : "{\"id\":3453535,\"category\": null, \"name\":\"updated-test-name\",\"photoUrls\":null,\"tags\":null,\"status\":\"Available\"}",
+      "ignoreArrayOrder" : true,
+      "ignoreExtraElements" : true
+    } ]
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"id\":3453535,\"name\":\"updated-test-name\",\"photoUrls\":[],\"tags\":[],\"status\":\"available\"}",
+    "headers" : {
+      "Date" : "Thu, 19 Dec 2019 08:51:59 GMT",
+      "Access-Control-Allow-Origin" : "*",
+      "Access-Control-Allow-Methods" : "GET, POST, DELETE, PUT",
+      "Access-Control-Allow-Headers" : "Content-Type, api_key, Authorization",
+      "Content-Type" : "application/json",
+      "Connection" : "close",
+      "Server" : "Jetty(9.2.9.v20150224)"
+    }
+  },
+  "uuid" : "249a815c-ca09-4755-a71f-b9bd5edf5c0e",
+  "persistent" : true,
+  "insertionIndex" : 5
+}

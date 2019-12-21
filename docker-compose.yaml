@@ -1,0 +1,8 @@
+version: "3"
+services:
+  rest-api-tests:
+    image: gokul/rest-api-test
+    environment:
+      - PROFILE=test
+    volumes:
+      - ./reports:/usr/share/api-test-proj/target/cucumber-reports/
