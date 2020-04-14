@@ -5,6 +5,7 @@ import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.specification.RequestSpecification;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 
 import static io.restassured.RestAssured.given;
 
@@ -13,7 +14,7 @@ public class RequestSpecApi {
     public ConfigHelper configHelper;
     protected RequestSpecification request;
 
-    public void setUpTest() throws FileNotFoundException {
+    public void setUpTest() throws IOException {
         configHelper = new ConfigHelper();
         RequestSpecBuilder builder = new RequestSpecBuilder();
 

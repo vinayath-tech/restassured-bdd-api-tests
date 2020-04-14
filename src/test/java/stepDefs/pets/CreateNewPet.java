@@ -1,29 +1,22 @@
-package stepDefs;
+package stepDefs.pets;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import cucumber.api.DataTable;
-import cucumber.api.Scenario;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-import org.apache.log4j.Logger;
-import org.testng.annotations.BeforeTest;
-import pojos.Category;
-import pojos.Pets;
-import pojos.Tag;
+import pojos.*;
 import utilities.Log;
 import utilities.PetApi;
 
 import java.io.FileNotFoundException;
-import java.lang.reflect.Method;
+import java.io.IOException;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.contains;
-import static org.hamcrest.Matchers.hasItem;
 import static org.testng.Assert.assertEquals;
 
 public class CreateNewPet {
@@ -31,15 +24,16 @@ public class CreateNewPet {
     public PetApi petApi;
     public Response resp, updtResp;
     public static int petId;
+    public Category cat;
 
-    public CreateNewPet() throws FileNotFoundException {
+    public CreateNewPet() throws IOException {
         petApi = new PetApi();
         this.petId = petId;
     }
 
     @Given("^I execute a service to add a new pet$")
     public void i_execute_a_service_to_add_a_new_pet() throws Throwable {
-        Category cat = new Category();
+        cat = new Category();
         cat.setId((long) 1017654);
         cat.setName("Gokul-testing");
 

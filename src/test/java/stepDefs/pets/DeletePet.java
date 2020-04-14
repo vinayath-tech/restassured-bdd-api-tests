@@ -1,11 +1,12 @@
-package stepDefs;
+package stepDefs.pets;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import io.restassured.response.Response;
+import stepDefs.pets.CreateNewPet;
 import utilities.PetApi;
 
-import java.io.FileNotFoundException;
+import java.io.IOException;
 
 import static org.testng.Assert.assertEquals;
 
@@ -15,7 +16,7 @@ public class DeletePet {
     public CreateNewPet createNewPet;
     public Response resp, verifyDelResp;
 
-    public DeletePet() throws FileNotFoundException {
+    public DeletePet() throws IOException {
         petApi = new PetApi();
     }
 

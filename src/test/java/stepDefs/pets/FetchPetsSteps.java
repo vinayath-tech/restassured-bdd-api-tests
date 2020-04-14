@@ -1,12 +1,13 @@
-package stepDefs;
+package stepDefs.pets;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import io.restassured.response.Response;
 import pojos.Pets;
+import stepDefs.pets.CreateNewPet;
 import utilities.PetApi;
 
-import java.io.FileNotFoundException;
+import java.io.IOException;
 
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import static org.hamcrest.CoreMatchers.equalTo;
@@ -18,7 +19,7 @@ public class FetchPetsSteps {
     public CreateNewPet createNewPet;
     public Response resp;
 
-    public FetchPetsSteps() throws FileNotFoundException {
+    public FetchPetsSteps() throws IOException {
         petApi = new PetApi();
     }
 

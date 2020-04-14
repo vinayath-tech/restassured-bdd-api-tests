@@ -3,10 +3,11 @@ package utilities;
 import io.restassured.response.Response;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 
 public class PetApi extends RequestSpecApi {
 
-    public PetApi() throws FileNotFoundException {
+    public PetApi() throws IOException {
         setUpTest();
     }
 

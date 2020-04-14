@@ -10,7 +10,7 @@ import utilities.Log;
 
 @Test
 @CucumberOptions(
-        features = { "./src/test/java/features/pets/" },
+        features = { "./src/test/java/features/" },
         glue = "stepDefs",
         tags = "~@wip",
         plugin = {"com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html"}
@@ -25,7 +25,7 @@ public class RunnerTest extends AbstractTestNGCucumberTests {
     @AfterClass
     public static void writeExtentReport() {
         Log.endLog("Test is ending ...");
-        Reporter.loadXMLConfig("extent-config.xml");
+        //Reporter.loadXMLConfig("extent-config.xml");
     }
 
 }

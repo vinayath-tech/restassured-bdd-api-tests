@@ -1,4 +1,4 @@
-package stepDefs;
+package stepDefs.pets;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -15,6 +15,7 @@ import utilities.PetApi;
 
 import java.awt.*;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -28,14 +29,10 @@ public class FetchPetByStatus {
     public PetApi petApi;
     public Response resp, invalidResp;
 
-    public FetchPetByStatus() throws FileNotFoundException {
+    public FetchPetByStatus() throws IOException {
         petApi = new PetApi();
     }
 
-//    @Given("^I execute a service to fetch pets by 'Sold' status$")
-//    public void i_execute_a_service_to_fetch_pets_by_Sold_status() throws Throwable {
-//        resp = petApi.fetchPetByStatus();
-//    }
     @Given("^I execute a service to fetch pets by \"([^\"]*)\" status$")
     public void i_execute_a_service_to_fetch_pets_by_status(String status) throws Throwable {
        resp = petApi.fetchPetByStatus(status);
